@@ -1,0 +1,87 @@
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/Proxima\ Nova\ Alt\ Bold.otf) format('woff2');
+}
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../font/Proxima\ Nova\ Alt\ Black.otf) format('woff2');
+}
+
+@font-face {
+  font-family: NanumSquare;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../font/NanumSquareEB.ttf) format('woff2');
+}
+
+@font-face {
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/Pretendard-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 600;
+  src: url(../font/Pretendard-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/Pretendard-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/Pretendard-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../font/Pretendard-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../font/Pretendard-Black.woff2) format('woff2');
+}
+
+body {
+  font-family: Pretendard;
+  font-size: 18px;
+  letter-spacing: -0.035em;
+  color: #1A1A1A;
+  font-variant-ligatures: normal;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+h2 {
+  font-family: ProximaNova;
+  font-size: clamp(42px, 7.6563vw, 72px);
+}
+
+.text-line {
+  font-family: NanumSquare;
+  font-size: clamp(36px, 5.1042vw, 62px);
+}
+
+.about-item .tit-wrap .tit {
+  font-family: NanumSquare;
+  font-size: clamp(36px, 5.1042vw, 62px);
+}

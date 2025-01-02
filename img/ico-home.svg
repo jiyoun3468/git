@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="36" viewBox="0 0 16 36">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_154979" data-name="사각형 154979" width="16" height="17" transform="translate(-24180 -22814)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_155074" data-name="사각형 155074" width="16" height="17" transform="translate(-24180 -22814)" fill="#f1f1f1" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_170864" data-name="그룹 170864" transform="translate(24126 22812)">
+    <g id="마스크_그룹_203" data-name="마스크 그룹 203" transform="translate(54 2)" clip-path="url(#clip-path)">
+      <path id="holiday_village_FILL0_wght200_GRAD0_opsz24" d="M175.384-718.3v-10.016l8-6.764,8,6.764V-718.3Zm1.6-1.6h5.169v-3.692h2.461v3.692h5.169v-7.773l-6.4-5.164-6.4,5.164Zm0,0h0Z" transform="translate(-24355.385 -22078.678)"/>
+    </g>
+    <g id="마스크_그룹_241" data-name="마스크 그룹 241" transform="translate(54 21)" clip-path="url(#clip-path-2)">
+      <path id="holiday_village_FILL0_wght200_GRAD0_opsz24-2" data-name="holiday_village_FILL0_wght200_GRAD0_opsz24" d="M175.384-718.3v-10.016l8-6.764,8,6.764V-718.3Zm1.6-1.6h5.169v-3.692h2.461v3.692h5.169v-7.773l-6.4-5.164-6.4,5.164Zm0,0h0Z" transform="translate(-24355.385 -22078.678)" fill="#f1f1f1"/>
+    </g>
+  </g>
+</svg>

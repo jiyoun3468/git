@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="43" viewBox="0 0 20 43">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_155100" data-name="사각형 155100" width="20" height="13" transform="translate(-23810 -22760)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_155101" data-name="사각형 155101" width="20" height="13" transform="translate(-23810 -22760)" fill="#f1f1f1" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_170909" data-name="그룹 170909" transform="translate(24014 22722)">
+    <g id="마스크_그룹_262" data-name="마스크 그룹 262" transform="translate(-204 38)" clip-path="url(#clip-path)">
+      <path id="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20" d="M275.585-587.548l-7.893-7.893.867-.866,7.026,7.026,7.027-7.026.867.866Z" transform="translate(-24075.691 -22161.691)" fill="#1a1a1a"/>
+      <path id="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20_-_윤곽선" data-name="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20 - 윤곽선" d="M275.585-587.548l7.893-7.893-.867-.866-7.027,7.026-7.026-7.026-.867.866,7.893,7.893m0,1a1,1,0,0,1-.707-.293l-7.893-7.893a1,1,0,0,1-.293-.707,1,1,0,0,1,.293-.707l.867-.866a1,1,0,0,1,1.414,0l6.319,6.319,6.319-6.319a1,1,0,0,1,1.414,0l.867.866a1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-7.893,7.893A1,1,0,0,1,275.585-586.548Z" transform="translate(-24075.691 -22161.691)" fill="#1a1a1a"/>
+    </g>
+    <g id="마스크_그룹_263" data-name="마스크 그룹 263" transform="translate(-204 53)" clip-path="url(#clip-path-2)">
+      <path id="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20-2" data-name="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20" d="M275.585-587.548l-7.893-7.893.867-.866,7.026,7.026,7.027-7.026.867.866Z" transform="translate(-24075.691 -22161.691)" fill="#e7343f"/>
+      <path id="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20_-_윤곽선-2" data-name="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20 - 윤곽선" d="M275.585-587.548l7.893-7.893-.867-.866-7.027,7.026-7.026-7.026-.867.866,7.893,7.893m0,1a1,1,0,0,1-.707-.293l-7.893-7.893a1,1,0,0,1-.293-.707,1,1,0,0,1,.293-.707l.867-.866a1,1,0,0,1,1.414,0l6.319,6.319,6.319-6.319a1,1,0,0,1,1.414,0l.867.866a1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-7.893,7.893A1,1,0,0,1,275.585-586.548Z" transform="translate(-24075.691 -22161.691)" fill="#e7343f"/>
+    </g>
+    <g id="마스크_그룹_264" data-name="마스크 그룹 264" transform="translate(-204 68)" clip-path="url(#clip-path-2)">
+      <path id="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20-3" data-name="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20" d="M275.585-587.548l-7.893-7.893.867-.866,7.026,7.026,7.027-7.026.867.866Z" transform="translate(-24075.691 -22161.691)" fill="#f1f1f1"/>
+      <path id="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20_-_윤곽선-3" data-name="keyboard_arrow_down_FILL0_wght200_GRAD0_opsz20 - 윤곽선" d="M275.585-587.548l7.893-7.893-.867-.866-7.027,7.026-7.026-7.026-.867.866,7.893,7.893m0,1a1,1,0,0,1-.707-.293l-7.893-7.893a1,1,0,0,1-.293-.707,1,1,0,0,1,.293-.707l.867-.866a1,1,0,0,1,1.414,0l6.319,6.319,6.319-6.319a1,1,0,0,1,1.414,0l.867.866a1,1,0,0,1,.293.707,1,1,0,0,1-.293.707l-7.893,7.893A1,1,0,0,1,275.585-586.548Z" transform="translate(-24075.691 -22161.691)" fill="#f1f1f1"/>
+    </g>
+  </g>
+</svg>
