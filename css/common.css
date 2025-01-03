@@ -3353,8 +3353,8 @@ footer#footer .footer-nav-wrap ul li a:hover {
 }
 
 footer#footer .footer-util-wrap {
-    grid-column-start: 9;
-    grid-column-end: 13;
+    grid-column-start: 11;
+    grid-column-end: 14;
     margin-top: 2px;
 }
 
