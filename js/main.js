@@ -40,8 +40,8 @@ $(function() {
             gsap.to('.main-visual .visual-back', {
                 scrollTrigger: {
                     trigger: '.main-visual',
-                    start: 'top top',
-                    end: 'bottom center',
+                    start: 'top conter',
+                    end: 'bottom bottom',
                     scrub: true,
                     // markers: true,
                 },
@@ -97,7 +97,7 @@ $(function() {
                     trigger: '.main-about .about-intro',
                     scrub: true,
                     start: 'bottom top',
-                    end: '+=' + (window.innerHeight * 3),
+                    end: '+=' + (window.innerHeight * 2),
                     // markers: true,
                 }
             });
@@ -106,8 +106,7 @@ $(function() {
             tl02.from('.main-about ul li:nth-child(2) img', {scale: 1.2,},'about01')
             tl02.to('.main-about ul li:nth-child(3) .img-wrap', {y: 0,},'about02')
             tl02.from('.main-about ul li:nth-child(3) img', {scale: 1.2,},'about02')
-            tl02.to('.main-about ul li:nth-child(4) .img-wrap', {y: 0,},'about03')
-            tl02.from('.main-about ul li:nth-child(4) img', {scale: 1.2,},'about03')
+
 
             gsap.to('.main-about ul li:nth-child(2) .about-txt', {
                 scrollTrigger: {
@@ -121,7 +120,7 @@ $(function() {
                     // markers: true,
                 },
                 opacity: 1,
-                duration: 0.2,
+                duration: 0.1,
             });
 
             gsap.to('.main-about ul li:nth-child(3) .about-txt', {
@@ -131,12 +130,12 @@ $(function() {
                     start: '+=' + (window.innerHeight * 2.4),
                     end: '+=' + (window.innerHeight * 3.4),
                     scrub: false,
-                    onEnter: () => $('.main-about .about-motion').removeClass('index01 index02 index04').addClass('index03'),
+                    onEnter: () => $('.main-about .about-motion').removeClass('index01 index02').addClass('index03'),
                     onLeaveBack: () => $('.main-about .about-motion').removeClass('index03').addClass('index02'),
                     // markers: true,
                 },
                 opacity: 1,
-                duration: 0.2,
+                duration: 0.1,
             });
         }
     })
@@ -156,30 +155,29 @@ $(function() {
     ScrollTrigger.matchMedia({
         "(min-width: 1024px)": () => {
             const ani1 = gsap.timeline();
-
-            ani1.from('.busi-contents-wrap .busi02', {x: '100%'},'fir')
-                // .from('.busi-contents-wrap .busi03', {x: '100%'},'sec')
-                // .from('.busi-contents-wrap .busi04', {x: '100%'},'thi')
-
+    
+            ani1.from('.busi-contents-wrap .busi02', { x: '100%' }, 'fir');
+    
             let st = ScrollTrigger.create({
                 animation: ani1,
                 trigger: '.main-busi .busi-motion',
                 start: 'top top',
-                end: 'bottom bottom',
+                end: '+=1500', // 스크롤 가동 범위를 늘림
                 scrub: true,
                 // markers: true,
-            })
-
-            $('.busi-menu-wrap button').on('click',function() {
+            });
+    
+            $('.busi-menu-wrap button').on('click', function () {
                 var i = $(this).parent().index();
-
-                if(i==0) $('html, body').stop().animate({scrollTop: $('.busi-motion').offset().top}, 1000);
-                // else if (i==1) gsap.to(window, {duration: 1, scrollTo: ani1.scrollTrigger.labelToScroll('sec')});
-                // else if (i==2) gsap.to(window, {duration: 1, scrollTo: ani1.scrollTrigger.labelToScroll('thi')});
-                else if (i==3) gsap.to(window, {duration: 1, scrollTo: st.end});
-            })
+    
+                if (i == 0) {
+                    $('html, body').stop().animate({ scrollTop: $('.busi-motion').offset().top }, 1000);
+                } else if (i == 1) {
+                    gsap.to(window, { duration: 1, scrollTo: st.end });
+                }
+            });
         }
-    })
+    });
 
     $(window).on('resize',function() {
         abousSlide()
@@ -198,7 +196,7 @@ $(function() {
         secSep();
         busiSc();
 
-        if($(window).scrollTop() > $(window).height() / 2) {
+        if($(window).scrollTop() > $(window).height() / 1) {
             $('.quick-wrap').addClass('is-scroll');
         } else {
             $('.quick-wrap').removeClass('is-scroll');
