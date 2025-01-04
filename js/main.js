@@ -1,5 +1,9 @@
 $(function() {
-
+    document.addEventListener('DOMContentLoaded', () => {
+        if (typeof window.commonFunction === 'function') {
+          window.commonFunction();
+        }
+      });
     abousSlide();
     busiSlide();
 
@@ -461,3 +465,5 @@ function hoverEffect() {
         $(".sec3 .conwrap .boxwrap .box").removeClass("active not-active");
     }
 }
+
+
