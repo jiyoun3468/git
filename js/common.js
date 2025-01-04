@@ -1,4 +1,8 @@
 $(function() {
+    window.commonFunction = function () {
+        console.log('common.js loaded');
+      };
+
     const lenis = new Lenis()
 
     lenis.on('scroll', ScrollTrigger.update)
