@@ -404,12 +404,6 @@ function abousSlide() {
         dots: true,
         appendDots: $('.main-about .slide-dot-wrap'),
     };
-
-    if ($(document).width() > 1024) {
-        $('.main-about .about-list').filter('.slick-initialized').slick('unslick');
-    } else {
-        $('.main-about .about-list').not('.slick-initialized').slick(aboutOptions);
-    }
 }
 
 function busiSlide() {
@@ -424,12 +418,6 @@ function busiSlide() {
         dots: true,
         appendDots: $('.busi-con .slide-dot-wrap'),
     };
-
-    if ($(document).width() > 1024) {
-        $('.busi-contents-wrap').filter('.slick-initialized').slick('unslick');
-    } else {
-        $('.busi-contents-wrap').not('.slick-initialized').slick(busiOptions);
-    }
 }
 
 function busiSc() {
