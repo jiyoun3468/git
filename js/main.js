@@ -454,4 +454,91 @@ function hoverEffect() {
     }
 }
 
+$(document).ready(function () {
+    let currentIndex = 0; // 현재 활성화된 인덱스
+    const $images = $(".all_img figure"); // 큰 이미지 그룹
+    const $texts = $(".all_text > div"); // 텍스트 그룹
+    const $smallImages = $(".sm-img figure"); // 작은 이미지 그룹
+    const totalItems = $images.length; // 총 아이템 개수
+    let interval; // 자동 슬라이드 인터벌 변수
+    let startX = 0; // 스와이프 시작 X 좌표
+    let endX = 0; // 스와이프 종료 X 좌표
+  
+    function updateContent(newIndex) {
+      if (newIndex < 0) newIndex = totalItems - 1;
+      if (newIndex >= totalItems) newIndex = 0;
+  
+      // 기존 요소 숨기기 (fade 효과)
+      $images.stop(true, true).fadeOut(500).removeClass("on");
+      $texts.stop(true, true).fadeOut(500).removeClass("on");
+      $smallImages.stop(true, true).fadeOut(500).removeClass("on");
+  
+      // 새로운 요소 보여주기
+      $images.eq(newIndex).stop(true, true).fadeIn(500).addClass("on");
+      $texts.eq(newIndex).stop(true, true).fadeIn(500).addClass("on");
+  
+      // 작은 이미지는 다음 이미지가 보이도록 설정
+      let nextIndex = (newIndex + 1) % totalItems;
+      $smallImages.removeClass("on").fadeOut(500);
+      $smallImages.eq(nextIndex).fadeIn(500).addClass("on");
+  
+      currentIndex = newIndex;
+    }
+  
+    // 자동 슬라이드 (10초마다 변경)
+    function startAutoSlide() {
+      interval = setInterval(function () {
+        updateContent(currentIndex + 1);
+      }, 10000); // 10초 설정
+    }
+  
+    startAutoSlide(); // 자동 슬라이드 시작
+  
+    // 버튼 클릭 이벤트
+    $(".btn button").eq(0).click(function () {
+      updateContent(currentIndex - 1);
+      resetAutoSlide();
+    });
+  
+    $(".btn button").eq(1).click(function () {
+      updateContent(currentIndex + 1);
+      resetAutoSlide();
+    });
+  
+    // 작은 이미지 클릭 시 다음 이미지로 변경
+    $smallImages.click(function () {
+      updateContent(currentIndex + 1);
+      resetAutoSlide();
+    });
+  
+    // **PC 및 모바일 스와이프 이벤트 추가**
+    $(".all_img").on("mousedown touchstart", function (e) {
+      startX = e.pageX || e.originalEvent.touches[0].pageX; // 터치 또는 마우스 X 좌표 저장
+    });
+  
+    $(".all_img").on("mouseup touchend", function (e) {
+      endX = e.pageX || e.originalEvent.changedTouches[0].pageX; // 터치 또는 마우스 X 좌표 저장
+      let diff = startX - endX;
+  
+      if (Math.abs(diff) > 50) { // 50px 이상 이동하면 동작
+        if (diff > 0) {
+          updateContent(currentIndex + 1); // 왼쪽 스와이프 → 다음 이미지
+        } else {
+          updateContent(currentIndex - 1); // 오른쪽 스와이프 → 이전 이미지
+        }
+        resetAutoSlide(); // 자동 슬라이드 리셋
+      }
+    });
+  
+    // **터치 이벤트 방지 (모바일에서 기본 동작 방해 방지)**
+    $(".all_img").on("touchmove", function (e) {
+      e.preventDefault();
+    });
+  
+    // 자동 슬라이드 리셋 (사용자가 조작하면 다시 10초 후 시작)
+    function resetAutoSlide() {
+      clearInterval(interval);
+      startAutoSlide();
+    }
+  });
 
